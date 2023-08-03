@@ -6,11 +6,10 @@ import About from "@/views/About.vue";
 import Contact from "@/views/Contact.vue";
 import Detail from "@/views/Detail.vue";
 import Produk from "@/views/Produk.vue";
-import Kategori from "@/views/Kategori.vue"
-import KategoriProduk from "@/views/KategoriProduk.vue"
-import NotFound from "@/views/NotFound.vue"
-
-
+import Kategori from "@/views/Kategori.vue";
+import KategoriProduk from "@/views/KategoriProduk.vue";
+import NotFound from "@/views/NotFound.vue";
+import Login from "@/views/Login.vue";
 
 const routes = [ 
   {
@@ -37,6 +36,14 @@ const routes = [
     path: "/produk",
     name: "Produk",
     component: Produk,
+    beforeEnter: (to, from, next) => {
+      const loggedInUser = true;
+      if (loggedInUser) {
+        next(); // Lanjutkan navigasi ke halaman produk jika sudah login
+      } else {
+        next("/login"); // Alihkan ke halaman login jika belum login
+      }
+    },
   },
   {
     path: "/kategori",
@@ -66,6 +73,12 @@ const routes = [
     component: NotFound,
     
   },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login,
+    props: true,
+  }
   
 ];
 

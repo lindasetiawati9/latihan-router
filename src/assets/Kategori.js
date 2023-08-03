@@ -25,5 +25,10 @@ export const kategori = {
             "nama": "Ice Cream",
             "img": "eskrim.jpg"
         },
+        {
+            'id': 6,
+            "nama": "Obat-obatan",
+            "img": "obat.jpg"
+        },
     ]
 }

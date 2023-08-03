@@ -53,7 +53,7 @@ export default {
   padding: 2px 16px;
 }
  img {
-  height: 100px;
+  height: 250px;
  }
 </style>
 
