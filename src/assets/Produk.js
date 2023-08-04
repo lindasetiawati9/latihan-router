@@ -106,26 +106,5 @@ export const produk = {
             "id_kategori": 5,
             "img": "silverqueen.jpg"
         },
-        {
-            'id': 16,
-            "nama": "Ice Cream Nestle Cremeria",
-            "harga": "Rp. 90.000,00",
-            "id_kategori": 0,
-            "img": "nestle.jpg"
-        },
-        {
-            'id': 17,
-            "nama": "Wall's Silverqueen",
-            "harga": "Rp. 36.000,00",
-            "id_kategori": 0,
-            "img": "silverqueen.jpg"
-        },
-        {
-            'id': 18,
-            "nama": "Wall's Silverqueen",
-            "harga": "Rp. 36.000,00",
-            "id_kategori": 0,
-            "img": "silverqueen.jpg"
-        },
     ]
 }
